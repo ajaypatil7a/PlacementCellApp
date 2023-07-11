@@ -1,0 +1,36 @@
+<header>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Team Career Camp</a>
+            <% if(locals.user) { %>
+                <a class="navbar-brand" href="/profile" style="font-size: 1rem;
+                    background: linear-gradient(to right,rgb(37, 105, 231),rgb(57, 102, 226)); 
+                    padding: 10px;
+                    border-radius: 10px;">Hello <%= locals.user.username%></a>
+                <%}%>
+
+                    <form class="d-flex">
+                        <a class="navbar-brand" href="/dashboard" style="font-size: 1rem;
+                    background: linear-gradient(to right,rgb(61, 77, 221),rgb(139, 160, 219)); 
+                    padding: 10px;
+                    border-radius: 10px;">Dashboard</a>
+                        <a class="navbar-brand" href="/student/add-student" style="font-size: 1rem;
+                    background: linear-gradient(to right,rgb(61, 77, 221),rgb(139, 160, 219)); 
+                    padding: 10px;
+                    border-radius: 10px;">Add Student</a>
+                        <a class="navbar-brand" href="/interview/add-interview" style="font-size: 1rem;
+                    background: linear-gradient(to right,rgb(61, 77, 221),rgb(139, 160, 219)); 
+                    padding: 10px;
+                    border-radius: 10px;">Add Interview</a>
+                        <a class="navbar-brand" href="/download" style="font-size: 1rem;
+                    background: linear-gradient(to right,rgb(61, 77, 221),rgb(139, 160, 219)); 
+                    padding: 10px;
+                    border-radius: 10px;">Report</a>
+                        <a class="navbar-brand" href="/sign-out" style="font-size: 1rem;
+                    background: linear-gradient(to right,rgb(226, 56, 56),rgb(226, 82, 15)); 
+                    padding: 10px;
+                    border-radius: 10px;">Signout</a>
+                    </form>
+        </div>
+    </nav>
+</header>
